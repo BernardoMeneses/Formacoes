@@ -10,52 +10,60 @@
 |                                                                |
 |         Makefile: Para compilar o projeto.                     |
 |                                                                |
-|         ft_printf.h: Cabeçalho com declarações.                |
+|         ft_printf.h: Headers com declarações.                  |
 |                                                                |               
 |         ft_printf.c: Implementação da função principal.        |
 |                                                                |
-|         libft/: Pasta contendo a biblioteca auxiliar.          |
+|         libft/: Pasta contendo a biblioteca auxiliar           |
+|        (Baixar primeiro a pasta q se encontra no repositorio)  |
+|                                                                |
 |                                                                |
 ------------------------------------------------------------------
-PASSO 2: Compilar o Projeto
 
-Compile a biblioteca estática libftprintf.a:
+				PASSO 2
+--------------------------------------------------------------------------------------
+|                                                                                    |
+|                                                                                    |
+|      Compile a biblioteca estática libftprintf.a:                                  |
+|                                                                                    |
+|      make                                                                          |
+|                                                                                    |
+|     Verifique se o ficheiro libftprintf.a foi criado com sucesso:                  |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|     Certifique-se de que o arquivo libftprintf.a está presente na pasta.           |
+|                                                                                    |
+|     O arquivo main tamb'em vai ser gerado automaticamente para gerar o test file   |
+|                                                                                    |
+--------------------------------------------------------------------------------------
 
-make
+				PASSO 3
+--------------------------------------------------------------------------------------
+|       Compila o ficheiro printf_tester.c, linkando com a biblioteca libftprintf.a: |
+|                                                                                    |
+|        gcc tester.c -L. -lftprintf -o test_ftprintf                                |
+|                                                                                    |
+|        -L.: Indica a pasta atual onde está a biblioteca.                           |
+|                                                                                    |
+|        -lftprintf: Linka o programa com libftprintf.a.                             |
+|                                                                                    |
+|        -o test_ftprintf: Nomeia o executável como test_ftprintf.                   |
+|                                                                                    |
+--------------------------------------------------------------------------------------
 
-Verifique se o arquivo libftprintf.a foi gerado com sucesso:
-
-ls
-
-Certifique-se de que o arquivo libftprintf.a está presente no diretório.
-
-O arquivo main tamb'em vai ser gerado automaticamente para gerar o test file
-
-------------------------------------------------------------------
-PASSO 3: Compilar o Programa de Testes
-
-Compile o arquivo printf_tester.c, linkando com a biblioteca libftprintf.a:
-
-gcc tester.c -L. -lftprintf -o test_ftprintf
-
--L.: Indica o diretório atual onde está a biblioteca.
-
--lftprintf: Linka o programa com libftprintf.a.
-
--o test_ftprintf: Nomeia o executável como test_ftprintf.
-
-------------------------------------------------------------------
-PASSO 4: Executar o Programa
-
-Execute o programa de teste gerado:
-
-./test_ftprintf
-
-Verifique se a saída do ft_printf corresponde à do printf para todos os testes.
-
--------------------------------------------------------------------
+				PASSO 4: Executar o Programa
+----------------------------------------------------------------------------------
+|		Execute o programa de teste gerado:                              |
+|                                                                                |
+|		./test_ftprint                                                   |
+|										 |
+|		Verifique se a saída do ft_printf corresponde  			 |
+|		à do printf para todos os testes.                                |
+|										 |
+----------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------------
-|   CASO TIVEREM DIFICULDADES COM OS 2 ULTIMOS PASSOS PODEM USAR O COMANDO "make test" Q OS       |
+|   CASO TIVEREM DIFICULDADES COM OS 2 ULTIMOS PASSOS PODEM USAR O COMANDO "make test" QUE OS     |
 |   ULTIMOS PASSOS SERAO REALIZADOS AUTOMATICAMENTE                                               |
 ---------------------------------------------------------------------------------------------------
