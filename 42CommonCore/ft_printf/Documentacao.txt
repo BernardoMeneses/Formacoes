@@ -6,7 +6,7 @@
                     PASSO 1
 -----------------------------------------------------------------
 |                                                                |
-|         Arquivos presentes neste projeto:                      |
+|         Ficheiros obrigatórios q têm de estar presentes:       |
 |                                                                |
 |         Makefile: Para compilar o projeto.                     |
 |                                                                |
@@ -14,8 +14,8 @@
 |                                                                |               
 |         ft_printf.c: Implementação da função principal.        |
 |                                                                |
-|         libft/: Pasta contendo a biblioteca auxiliar           |
-|        (Baixar primeiro a pasta q se encontra no repositorio)  |
+|         libft/: Pasta que contém o libft com funções aux.      |
+|(Baixar primeiro a pasta "libft" q se encontra no repositorio)  |
 |                                                                |
 |                                                                |
 ------------------------------------------------------------------
@@ -32,9 +32,9 @@
 |                                                                                    |
 |                                                                                    |
 |                                                                                    |
-|     Certifique-se de que o arquivo libftprintf.a está presente na pasta.           |
+|     Certifique-se de que o ficheiro libftprintf.a está presente na pasta.          |
 |                                                                                    |
-|     O arquivo main tamb'em vai ser gerado automaticamente para gerar o test file   |
+|     O ficheiro main tamb'em vai ser gerado automaticamente para gerar o test file  |
 |                                                                                    |
 --------------------------------------------------------------------------------------
 
@@ -48,13 +48,13 @@
 |                                                                                    |
 |        -lftprintf: Linka o programa com libftprintf.a.                             |
 |                                                                                    |
-|        -o test_ftprintf: Nomeia o executável como test_ftprintf.                   |
+|        -o test_ftprintf: Nomeia o .exe como test_ftprintf.                         |
 |                                                                                    |
 --------------------------------------------------------------------------------------
 
-				PASSO 4: Executar o Programa
+				PASSO 4
 ----------------------------------------------------------------------------------
-|		Execute o programa de teste gerado:                              |
+|		Execute o programa de teste criado:                              |
 |                                                                                |
 |		./test_ftprint                                                   |
 |										 |
